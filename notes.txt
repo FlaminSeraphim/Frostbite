@@ -1,0 +1,4 @@
+clipboardjs.com for copying and pasting
+paste into excel the comma delimited words then press ctrl and use the text import wizard. Everyone line with need to be seperated by a "return/enter button line press"
+
+curl or request for the api requests.

@@ -1,0 +1,190 @@
+<% include ./partials/header %>
+
+<h1>Search Stuff!</h1>
+<!--
+<form class="" action="/search" method="post">
+  <input type="text" name="" placeholder='addition'>
+
+  <input type="text" name="" placeholder='block'>
+
+  <input type="text" name="" placeholder='book'>
+
+  <input type="text" name="" placeholder='county'>
+
+  <input type="text" name="" placeholder='date_end'>
+
+  <input type="text" name="" placeholder='date_start'>
+
+  <input type="text" name="" placeholder='last_modified_end'>
+
+  <input type="text" name="" placeholder='last_modified_start'>
+
+  <input type="text" name="" placeholder='legal'>
+
+  <input type="text" name="" placeholder='lot'>
+
+  <input type="text" name="" placeholder='number'>
+
+  <input type="text" name="" placeholder='offset'>
+
+  <input type="text" name="" placeholder='page'>
+
+  <input type="text" name="" placeholder='party'>
+
+  <input type="text" name="" placeholder='per_page'>
+
+  <input type="text" name="" placeholder='quarter'>
+
+  <input type="text" name="" placeholder='range'>
+
+  <input type="text" name="" placeholder='recorded_end'>
+
+  <input type="text" name="" placeholder='recorded_start'>
+
+  <input type="text" name="" placeholder='section'>
+
+  <input type="text" name="" placeholder='series'>
+
+  <input type="text" name="" placeholder='township'>
+
+ype="text" name="" placeholder='type'>
+
+</form> -->
+
+<h3>Advanced Search</h3>
+
+<form class="" action="/search" method="get">
+  <h4>County</h4>
+  <select name="county">
+    <option value=""></option>
+    <option value ="ALL COUNTIES"></option>
+    <option value ="Adair">Adair</option>
+    <option value ="Alfalfa">Alfalfa</option>
+    <option value ="Atoka">Atoka</option>
+    <option value ="Beaver">Beaver</option>
+    <option value ="Beckham">Beckham</option>
+    <option value ="Blaine">Blaine</option>
+    <option value ="Bryan">Bryan</option>
+    <option value ="Caddo">Caddo</option>
+    <option value ="Canadian">Canadian</option>
+    <option value ="Carter">Carter</option>
+    <option value ="Cherokee">Cherokee</option>
+    <option value ="Choctaw">Choctaw</option>
+    <option value ="Cimarron">Cimarron</option>
+    <option value ="Cleveland">Cleveland</option>
+    <option value ="Coal">Coal</option>
+    <option value ="Comanche">Comanche</option>
+    <option value ="Cotton">Cotton</option>
+    <option value ="Craig">Craig</option>
+    <option value ="Creek">Creek</option>
+    <option value ="Custer">Custer</option>
+    <option value ="Delaware">Delaware</option>
+    <option value ="Dewey">Dewey</option>
+    <option value ="Ellis">Ellis</option>
+    <option value ="Garfield">Garfield</option>
+    <option value ="Garvin">Garvin</option>
+    <option value ="Grady">Grady</option>
+    <option value ="Grant">Grant</option>
+    <option value ="Greer">Greer</option>
+    <option value ="Harmon">Harmon</option>
+    <option value ="Harper">Harper</option>
+    <option value ="Haskell">Haskell</option>
+    <option value ="Hughes">Hughes</option>
+    <option value ="Jackson">Jackson</option>
+    <option value ="Jefferson">Jefferson</option>
+    <option value ="Johnston">Johnston</option>
+    <option value ="Kay">Kay</option>
+    <option value ="Kingfisher">Kingfisher</option>
+    <option value ="Kiowa">Kiowa</option>
+    <option value ="Latimer">Latimer</option>
+    <option value ="LeFlore">LeFlore</option>
+    <option value ="Lincoln">Lincoln</option>
+    <option value ="Logan">Logan</option>
+    <option value ="Love">Love</option>
+    <option value ="McClain">McClain</option>
+    <option value ="McCurtain">McCurtain</option>
+    <option value ="McIntosh">McIntosh</option>
+    <option value ="Major">Major</option>
+    <option value ="Marshall">Marshall</option>
+    <option value ="Mayes">Mayes</option>
+    <option value ="Murray">Murray</option>
+    <option value ="Muskogee">Muskogee</option>
+    <option value ="Noble">Noble</option>
+    <option value ="Nowata">Nowata</option>
+    <option value ="Okfuskee">Okfuskee</option>
+    <option value ="Oklahoma">Oklahoma</option>
+    <option value ="Okmulgee">Okmulgee</option>
+    <option value ="Osage">Osage</option>
+    <option value ="Ottawa">Ottawa</option>
+    <option value ="Pawnee">Pawnee</option>
+    <option value ="Payne">Payne</option>
+    <option value ="Pittsburg">Pittsburg</option>
+    <option value ="Pontotoc">Pontotoc</option>
+    <option value ="Pottawatomie">Pottawatomie</option>
+    <option value ="Pushmataha">Pushmataha</option>
+    <option value ="Roger">Roger</option>
+    <option value ="Rogers">Rogers</option>
+    <option value ="Seminole">Seminole</option>
+    <option value ="Sequoyah">Sequoyah</option>
+    <option value ="Stephens">Stephens</option>
+    <option value ="Texas">Texas</option>
+    <option value ="Tillman">Tillman</option>
+    <option value ="Tulsa">Tulsa</option>
+    <option value ="Wagoner">Wagoner</option>
+    <option value ="Washington">Washington</option>
+    <option value ="Washita">Washita</option>
+    <option value ="Woods">Woods</option>
+    <option value ="Woodward">Woodward</option>
+  </select>
+
+  <h4>section 1 Name</h4>
+  <input type="text" name="party_name" placeholder='party_name'>
+  <input type="text" name="party_type" placeholder="party_type">
+  <p>	The name of one or more instrument types, separated with
+    a vertical pipe ("|"). e.g. "Mortgage", or "Mortgage|MTG".<p>
+  <input type="text" name="text"  placeholder="text">
+  <p>	A piece of text appearing anywhere on an instrument,
+    including its parties and legal descriptions. If this parameter
+    is provided, all others except county will be ignored.<p>
+  <input type="text" name="book" placeholder='book'>
+  <input type="text" name="page" placeholder='page'>
+
+
+
+  <h4> section 2 instrument number</h4>
+  <input type="text" name="series" placeholder='series'>
+  <input type="text" name="number" placeholder='number'>
+  <input type="text" name="type" placeholder='type'>
+  <input type="text" name="date_start" placeholder='date_start' class="calendar">
+  <input type="text" name="date_end" placeholder='date_end' class="calendar">
+  <input type="text" name="modified_date_start" placeholder="modified date start">
+  <input type="text" name="modified_date_end" placeholder="modified date end">
+
+
+
+  <h4>section 3 legal description</h4>
+  <input type="text" name="legal_description" placeholder='legal description'>
+  <p>	A legal description or part of a legal description. e.g. "S11 T27 R12 SW".<p>
+  <input type="text" name="quarter" placeholder='quarter'>
+  <input type="text" name="section" placeholder='section'>
+  <input type="text" name="township" placeholder='township'>
+  <input type="text" name="range" placeholder='range'>
+  <input type="text" name="addition" placeholder='addition'>
+  <input type="text" name="block" placeholder='block'>
+  <input type="text" name="lot" placeholder='lot'>
+
+  <h4>Work Area</h4>
+  <input type="number" name="results_per_page" placeholder="results per page" value="15">
+  <input type="number" name="result_page" placeholder="result page" value="1"> <br>
+  <input type="text"   name="order_by" placeholder="order by">
+  <p>The field to order the results by. Can be "series", "book", or "indexed_date". Default is "indexed_date".</p>
+  <input type="text"   name="order_direction" placeholder="order direction">
+  <p>The direction to order the results by. Can be "asc" or "desc". Default is "desc".<p>
+
+  <textarea name="workArea" rows="8" cols="80"><%=workData%></textarea>  <br>
+  <input type="submit">
+</form>
+
+
+
+<% include ./partials/footer %>
