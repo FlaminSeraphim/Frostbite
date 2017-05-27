@@ -139,7 +139,14 @@ ype="text" name="" placeholder='type'>
 
   <h4>section 1 Name</h4>
   <input type="text" name="party_name" placeholder='party_name'>
-  <input type="text" name="party_type" placeholder="party_type">
+  <select name="party_type">
+    <option value=""></option>
+    <option value"Grantor">Grantor</option>
+    <option value"Grantee">Grantee</option>
+    <option value"Lienholder">Lienholder</option>
+    <option value"Issued Against">Issued Against</option>
+  </select>
+  <!-- <input type="text" name="party_type" placeholder="party_type"> -->
   <p>	The name of one or more instrument types, separated with
     a vertical pipe ("|"). e.g. "Mortgage", or "Mortgage|MTG".<p>
   <input type="text" name="text"  placeholder="text">
@@ -153,10 +160,10 @@ ype="text" name="" placeholder='type'>
 
   <h4> section 2 instrument number</h4>
   <input type="text" name="series" placeholder='series'>
-  <input type="text" name="number" placeholder='number'>
+  <input type="text" name="number" placeholder='number'> <br>
   <input type="text" name="type" placeholder='type'>
   <input type="text" name="date_start" placeholder='date_start' class="calendar">
-  <input type="text" name="date_end" placeholder='date_end' class="calendar">
+  <input type="text" name="date_end" placeholder='date_end' class="calendar"> <br>
   <input type="text" name="modified_date_start" placeholder="modified date start">
   <input type="text" name="modified_date_end" placeholder="modified date end">
 
@@ -166,10 +173,10 @@ ype="text" name="" placeholder='type'>
   <input type="text" name="legal_description" placeholder='legal description'>
   <p>	A legal description or part of a legal description. e.g. "S11 T27 R12 SW".<p>
   <input type="text" name="quarter" placeholder='quarter'>
-  <input type="text" name="section" placeholder='section'>
+  <input type="text" name="section" placeholder='section'> <br>
   <input type="text" name="township" placeholder='township'>
   <input type="text" name="range" placeholder='range'>
-  <input type="text" name="addition" placeholder='addition'>
+  <input type="text" name="addition" placeholder='addition'> <br>
   <input type="text" name="block" placeholder='block'>
   <input type="text" name="lot" placeholder='lot'>
 
