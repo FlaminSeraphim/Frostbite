@@ -16,7 +16,7 @@ app.use(methodOverride("_method"));
 app.get('/', function(req, res){
 
   res.render('home', {workData: req.query.workArea});
-})
+});
 
 //Search Route
 app.get('/search', function(req, res){
